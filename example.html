@@ -3,9 +3,83 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>php 프로그래밍 입문 html 연습 페이지</title>
+
+    <!--웹 폰트로 글꼴 바꾸기-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+
+    <!--다운로드 폰트로 글꼴 바꾸기-->
+    <style>
+        .title {
+            font-family: 'Nanum Myeongjo', serif;
+        }
+
+        .content
+        {
+            font-family: 'Song Myung', sans-serif;
+
+        }
+
+        table {
+            font-family: 'NanumBarunGothic', sans-serif;
+            border: 2px solid pink;
+            border-collapse: collapse;
+        }
+
+        th
+        {
+            border: 1px solid black;
+            padding: 3px;
+        }
+
+        td
+        { 
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
+    <!--제목 태그-->
+    <div class="title">
+        <!--글자 크기와 글꼴 지정하기-->
+        <h1>제일 큰 제목 태그를 생성합니다.</h1>
+        <h2>2번째로 큰 제목 태그를 생성합니다.</h2>
+        <h3>3번째로 큰 제목 태그를 생성합니다.</h3>
+        <h4>4번째로 큰 제목 태그를 생성합니다.</h4>
+        <h5>5번째로 큰 제목 태그를 생성합니다.</h5>
+        <h6>가장 작은 제목 태그를 생성합니다.</h6>
+    </div>
+    <hr /> <!--구분선-->
+    <br /> <!--줄바꿈-->
 
+    <!--본문 태그-->
+    <div class="content">
+        <p style="font-size:24px;">content의 글꼴과 크기를 바꿉니다.</p>
+        <p style="font-size:20px;">content의 글꼴과 크기를 바꿉니다.</p>
+        <p style="font-size:16px;">content의 글꼴과 크기를 바꿉니다.</p>
+    </div>
+
+    <!--div에 들어가지 않은 p 태그-->
+    <p style="font-size:12px; font-family:'S-Core Dream 9';">content의 글꼴과 크기를 바꿉니다.</p>
+    <br/>
+    <hr/>
+
+    <!--시간표 만들기-->
+    <table align = "center" width="400">    
+        <tr>
+            <th colspan ="6"><b>시간표</b></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+        </tr>
+    </table>
 </body>
 </html>
