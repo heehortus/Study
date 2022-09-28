@@ -1,0 +1,16 @@
+.title
+	{
+		background-color : pink;
+		color: #90a18c;
+		text-align: center;
+		padding: 5px 0;
+		border-radius: 5px;
+	}
+
+	.form
+	{
+		padding : 15px;
+		border-style: solid;
+		border-color : pink;
+		border-radius: 5px;
+	}

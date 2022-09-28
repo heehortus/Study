@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>간단한 회원가입 창 만들기</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="title">	<!--타이틀-->
+    <h2>회원가입 페이지</h2>
+  </div>
+  <br>
+
+  <div class="form">
+  	<form name="form1" method="post" action="view.php">
+    <label> 아이디 <br></label>
+      <input type="text" name="ID" placeholder="아이디 입력" size="15">
+      <input type="button" name="IDcheck" value="아이디 확인" size="15">
+      <br>
+      <br>
+
+      <label>비밀번호<br></label>
+      <input type="password" name="PW1" size="15"><br>
+      
+      <label>비밀번호 확인<br></label>
+      <input type="password" name="PW2">
+      <input type="button" name="PWcheck" value="비밀번호 확인" size="15">
+      <br><br>
+
+
+      <label>이름<br></label>
+      <input type="text" name="name" value="" size="15"> <br><br>
+
+
+      <label>생일<br></label>
+      
+      <select name="month">
+        <option value="">-- 선택 --</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+
+      <select name="day">
+        <option value="">-- 선택 --</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+      </select>
+      <br><br>
+
+      <label>성별<br></label>
+
+      <input type="radio" name="gender" id="man">
+      <label for="man">남자</label>
+      
+      <input type="radio" name="gender" id="woman"> <label for="woman">여자</label> <br><br>
+
+      <label>이메일<br></label>
+      <input type="email" name="email" placeholder="예: email@gmail.com" size="15"><br><br>
+
+      <label>휴대전화<br>통신사 선택 </label>
+
+      <input type="radio" name="agency" id="skt"> <label for="man">SKT</label>
+      <input type="radio" name="agency" id="kt"> <label for="man">KT</label>
+      <input type="radio" name="agency" id="lg"> <label for="man">LG</label>
+      <br>
+      <input type="text" name="phone" placeholder="010-****-****" size="15">
+      <input type="button" name="certification" value="인증번호 받기" size="15"><br>
+      <input type="text" name="certification" placeholder="인증번호 입력" size="15">
+
+      <input type="button" name="certification" value="확인"><br><br>
+      
+		<br>
+      <input type="submit" value="확인">
+      <button type="submit" Onclick="reset()">다시 작성</button>
+      
+    </form>
+  </div>
+  
+  
+</body>
+</html>

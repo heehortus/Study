@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta charset ="utf-8">
+</head>
+<body>
+<form name="form1" method="post" action="ch07.php" enctype="multipart/form-data">
+	<ul>
+		<li>&nbsp;이&nbsp;&nbsp;름&nbsp;&nbsp;: <input type="text" name="name" value=""></li>
+		<li>아&nbsp;이&nbsp;디&nbsp;&nbsp;: <input type="text" name="id"> </li>
+		<li>비밀번호 : <input type="password" name="pass"> </li>
+	</ul>
+
+	<ul>
+	<li>글 내용 : </li>
+	<textarea rows="5" cols="60" name="content"></textarea>
+	<br>
+	</ul>
+
+	<ul>
+		<li>성별 : 남성 <input type="radio" name="gender" value="남">
+			성별 : 여성 <input type="radio" name="gender" value="여" checked>
+		</li>
+	</ul>
+
+	<ul>
+		<li>이메일 : 수신 <input type="radio" name="email_ok" value="예">
+			비수신 <input type="radio" name="email_ok" value="아니오" checked>
+		</li>
+	</ul>
+
+	<ul>
+		<li>이미지 업로드 : <input type="file" name="upload"></li>
+		<li>설명 : <textarea name="comment" rows="3" cols="60"></textarea></li>
+	</ul>
+
+	<input type="submit" value="확인">
+</form>
+</body>
+</html>
